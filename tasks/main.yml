@@ -1,0 +1,22 @@
+---
+
+- name: expand file system
+
+- name: set locale
+
+- name: set timezone
+
+- name: set hostname
+
+- name: add ssh key to pi user
+  authorized_key: user=pi key="{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
+
+- name: disable ssh password
+
+- name: setup fail2ban
+
+- name: setup unattendedupgrades
+
+- name: add dotfiles
+
+- name: setup and configure goss
